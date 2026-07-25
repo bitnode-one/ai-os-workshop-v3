@@ -15,6 +15,7 @@ Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hi
 - KI-OS-Architektur heller, großzügiger und weniger gedrängt neu aufgebaut
 - Peer-Review-Formulierung verständlicher gefasst
 - Modell- und Quellenlinks sichtbar und direkt anklickbar gemacht
+- Automatische Veröffentlichung als direkt aufrufbare GitHub-Pages-Webseite ergänzt
 
 ### Entfernt · ausdrücklich genehmigt
 

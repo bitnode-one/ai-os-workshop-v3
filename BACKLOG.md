@@ -37,7 +37,7 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 - [ ] Präsentationsmodus mit automatisch ausgeblendeter Steuerleiste
 - [ ] Export der Handouts als getrennte DE- und EN-PDFs
 - [ ] Optionaler Presenter View mit Notizen und Timer
-- [ ] Veröffentlichung über GitHub Pages
+- [x] Veröffentlichung über GitHub Pages
 
 ## Entscheidungsregeln
 
