@@ -15,8 +15,12 @@ Die normale GitHub-Repository-Ansicht zeigt nur die Dateien und führt
 
 1. Repository **Settings → Pages** öffnen.
 2. Unter **Build and deployment** als Source **GitHub Actions** wählen.
-3. Workflow **Deploy workshop to GitHub Pages** ausführen oder auf `main` pushen.
-4. Nach erfolgreichem Deployment den Online-Link oben öffnen.
+3. Diese Einstellung speichern, bevor der Workflow erstmals ausgeführt wird.
+4. Workflow **Deploy workshop to GitHub Pages** erneut ausführen oder auf `main` pushen.
+5. Nach erfolgreichem Deployment den Online-Link oben öffnen.
+
+Wenn `configure-pages` mit `Get Pages site failed: Not Found` abbricht, ist
+GitHub Pages noch nicht aktiviert oder noch nicht auf **GitHub Actions** gestellt.
 
 ## Start
 
