@@ -1,0 +1,19 @@
+{
+  "name": "ai-os-agent-workshop-v3",
+  "version": "3.0.1",
+  "private": true,
+  "description": "Bilingual four-hour AI OS workshop with exercises and complete handouts",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "start:open": "node tools/serve.mjs --open",
+    "start:lan": "node tools/serve.mjs --lan",
+    "start:lan:open": "node tools/serve.mjs --lan --open",
+    "workshop": "node tools/serve.mjs --lan --open",
+    "check": "node tools/check.mjs",
+    "check:governance": "node tools/check-governance.mjs .",
+    "check:notebook": "pwsh -File tools/check-notebook.ps1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

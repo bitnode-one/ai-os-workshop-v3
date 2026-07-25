@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Hybride KI mit lokaler und Cloud-Ausführung">
+  <defs><linearGradient id="bridge" x1="0" x2="1"><stop stop-color="#7ab8b2"/><stop offset="1" stop-color="#e2ae5f"/></linearGradient></defs>
+  <rect width="960" height="520" rx="40" fill="#fffaf0"/>
+  <rect x="70" y="120" width="310" height="280" rx="36" fill="#eaf6f4" stroke="#7ab8b2" stroke-width="7"/>
+  <path d="M130 310h190v45H130zM160 165h130v145H160z" fill="#fff" stroke="#16395c" stroke-width="6"/>
+  <circle cx="188" cy="338" r="9" fill="#7ab8b2"/>
+  <path d="M610 320c-52 0-94-35-94-79 0-39 34-72 78-77 18-50 70-84 130-84 76 0 138 53 138 119 0 6 0 11-1 16 33 13 55 41 55 73 0 43-42 78-94 78H610z" fill="#fff" stroke="#e2ae5f" stroke-width="7"/>
+  <path d="M380 260h180" stroke="url(#bridge)" stroke-width="24" stroke-linecap="round"/>
+  <path d="M530 225l45 35-45 35" fill="none" stroke="#16395c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#16395c" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">
+    <text x="225" y="455">LOKAL</text><text x="720" y="455">CLOUD</text>
+  </g>
+</svg>

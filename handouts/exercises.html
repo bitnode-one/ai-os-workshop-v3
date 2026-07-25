@@ -1,0 +1,66 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Übungen & Prompts</title><link rel="stylesheet" href="handouts.css"></head>
+<body><header><p class="kicker">Handout 02</p><h1>Übungen & Prompts</h1><p>Jede Übung enthält Ziel, Vorbereitung, zwei Promptvarianten, Sicherheitsgrenzen und Qualitätsprüfung.</p><nav><a href="index.html">← Handouts</a><a href="../#26">Präsentation</a><a href="local-ai.html">LM Studio</a></nav></header>
+<main>
+<section><p class="kicker">Übung 1 · 15 Minuten</p><h2>Aktueller News Radar</h2><p><b>Ziel:</b> Hermes recherchiert aktuelle Entwicklungen, vergleicht Quellen und erstellt ein prüfbares Briefing.</p><h3>Prompt A – geführt</h3><pre>Wir bauen gemeinsam ein aktuelles News-Briefing.
+Frage mich zuerst nach:
+- Thema und Zielgruppe,
+- Zeitraum,
+- gewünschter Länge,
+- bevorzugter Sprache,
+- Quellen, die ein- oder ausgeschlossen werden sollen.
+
+Erstelle danach einen Rechercheplan. Beginne erst nach meiner Bestätigung.
+Nutze mindestens 5 belastbare Quellen und bevorzuge Primärquellen.
+Trenne Fakten, Einordnung und offene Fragen.
+Nenne Veröffentlichungsdatum und Link je wesentlicher Aussage.
+Markiere Widersprüche und Unsicherheit.
+Speichere das Ergebnis als news-radar.md.
+Keine Anmeldung, Nachricht, Buchung oder Zahlung ohne Freigabe.</pre>
+<h3>Prompt B – direkt</h3><pre>Erstelle ein Morgenbriefing zu „KI-Agenten“ für die letzten 7 Tage.
+Zielgruppe: interessierte Selbstständige ohne technischen Hintergrund.
+Länge: maximal 700 Wörter.
+Nutze mindestens 5 belastbare Quellen, bevorzuge offizielle Ankündigungen,
+Dokumentationen und Originalstudien.
+Struktur:
+1. Drei wichtigste Entwicklungen
+2. Warum sie praktisch relevant sind
+3. Was noch unsicher oder umstritten ist
+4. Quellenliste mit Datum und Link
+Speichere das Ergebnis als news-radar.md.
+Erfinde keine fehlenden Angaben.</pre>
+<h3>Qualitätscheck</h3><ul class="checklist"><li>Primärquellen und Daten sind sichtbar.</li><li>Fakten und Interpretation sind getrennt.</li><li>Widersprüche oder Unsicherheit werden genannt.</li><li>Nur die vereinbarte Datei wurde erstellt.</li></ul></section>
+
+<section class="pagebreak"><p class="kicker">Übung 2 · 15 Minuten</p><h2>Dokumente → Entscheidungen → Aktionen</h2><p><b>Vorbereitung:</b> Einen Ordner <code>demo-projekt</code> mit ausschließlich fiktivem Protokoll, Angebot und Aufgabenliste anlegen.</p><h3>Prompt A – Extraktion</h3><pre>Lies ausschließlich die Dateien im Ordner demo-projekt.
+Extrahiere:
+- getroffene Entscheidungen,
+- offene Punkte,
+- Verantwortliche,
+- Termine,
+- Risiken und Widersprüche.
+
+Erfinde keine fehlenden Daten. Kennzeichne „nicht angegeben“.
+Erstelle:
+1. status.md mit einer verständlichen Zusammenfassung,
+2. next-actions.csv mit Spalten Aufgabe, Verantwortlich, Termin, Quelle, Status.
+Keine Quelldatei verändern. Nichts versenden oder veröffentlichen.
+Zeige mir vor dem Schreiben eine kurze Vorschau.</pre>
+<h3>Prompt B – Management-Briefing</h3><pre>Erstelle aus dem Ordner demo-projekt ein 1-seitiges Management-Briefing.
+Beginne mit „Entscheidung erforderlich“, falls Widersprüche oder fehlende Freigaben bestehen.
+Nenne zu jedem Punkt die Quelldatei.
+Formuliere anschließend höchstens 7 nächste Schritte nach Wirkung und Dringlichkeit.
+Speichere nur briefing.md. Keine anderen Dateien ändern.</pre>
+<h3>Qualitätscheck</h3><ul class="checklist"><li>Jede Aussage lässt sich auf eine Quelldatei zurückführen.</li><li>Fehlende Verantwortliche oder Termine wurden nicht erfunden.</li><li>CSV ist direkt nutzbar.</li><li>Keine Nachricht wurde versendet.</li></ul></section>
+
+<section class="pagebreak"><p class="kicker">Übung 3 · 12 Minuten</p><h2>Agent Canvas</h2><p>Wählen Sie eine kleine wiederkehrende Aufgabe. Füllen Sie Ziel, Quellen, Tools, Grenzen und Qualitätskriterien aus.</p><pre>Hilf mir, aus meiner Idee einen sicheren Agenten-Workflow zu machen.
+Frage nacheinander:
+1. Welches konkrete Ergebnis soll entstehen?
+2. Welche Eingaben und Quellen sind erlaubt?
+3. Welche Werkzeuge werden benötigt?
+4. Welche Aktionen sind reversibel?
+5. Welche Aktionen brauchen immer Freigabe?
+6. Wie erkennen wir ein gutes Ergebnis?
+7. Was soll bei Unsicherheit oder Fehlern passieren?
+
+Erstelle danach einen kompakten Agent Canvas und einen Testprompt.
+Führe den Workflow noch nicht aus.</pre><h3>Peer Review</h3><ul class="checklist"><li>Ist das Ergebnis eindeutig?</li><li>Ist der Zugriff minimal?</li><li>Gibt es eine Freigabestelle?</li><li>Ist das Verhalten bei Fehlern definiert?</li></ul></section>
+</main><footer>Nur fiktive oder ausdrücklich freigegebene Daten verwenden.</footer></body></html>

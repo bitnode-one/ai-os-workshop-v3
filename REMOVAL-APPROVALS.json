@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "policy": "Pflichtinhalte dürfen erst nach ausdrücklicher Genehmigung entfernt oder wesentlich gekürzt werden.",
+  "requiredFields": ["id", "contentId", "affectedSlides", "reason", "replacement", "requestedAt", "status", "approvedBy", "approvedAt"],
+  "allowedStatuses": ["requested", "approved", "rejected", "withdrawn"],
+  "approvals": [
+    {
+      "id": "REM-2026-07-25-01",
+      "contentId": "internal-codex-device-setup",
+      "affectedSlides": "V3.0.0 Folie 59 sowie Handout Workshop-Notebook",
+      "reason": "Geräte- und Codex-Setup war eine interne Nutzeranfrage und kein Workshop-Inhalt.",
+      "replacement": "Entfernt; allgemeine Modell- und Hardwarehinweise bleiben erhalten.",
+      "requestedAt": "2026-07-25",
+      "status": "approved",
+      "approvedBy": "Workshop-Verantwortlicher im Korrektur-Lauf",
+      "approvedAt": "2026-07-25"
+    },
+    {
+      "id": "REM-2026-07-25-02",
+      "contentId": "internal-device-infrastructure",
+      "affectedSlides": "V3.0.0 Folie 60",
+      "reason": "Surface Book, MINISFORUM und Remote-Infrastruktur gehören nicht in die Teilnehmerpräsentation.",
+      "replacement": "Durch ein allgemeines Abkürzungslexikon ersetzt.",
+      "requestedAt": "2026-07-25",
+      "status": "approved",
+      "approvedBy": "Workshop-Verantwortlicher im Korrektur-Lauf",
+      "approvedAt": "2026-07-25"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LM Studio + Hermes</title><link rel="stylesheet" href="handouts.css"></head>
+<body><header><p class="kicker">Handout 03</p><h1>Lokale KI mit LM Studio</h1><p>Rechner prüfen, Modell auswählen, lokalen Server starten und mit Hermes verbinden.</p><nav><a href="index.html">← Handouts</a><a href="../#49">Präsentation</a><a href="security.html">Sicherheit</a></nav></header>
+<main>
+<section><h2>1. Hardware mit Hermes prüfen</h2><pre>Hilf mir bei der Wahl eines lokalen LLM für LM Studio.
+Ermittle ausschließlich lesend:
+- Betriebssystem und Architektur,
+- CPU,
+- installierten RAM,
+- GPU-Modell,
+- dedizierten und gemeinsam genutzten Grafikspeicher,
+- freien Speicherplatz,
+- relevante Treiberinformationen.
+
+Frage danach nach meinen Aufgaben, gewünschter Geschwindigkeit,
+Kontextlänge und Datenschutzanforderungen.
+Empfiehl drei Optionen:
+1. sicher und schnell,
+2. ausgewogen,
+3. experimentell.
+Nenne jeweils Modellgröße, Quantisierung, erwartete Grenzen und Speicherbedarf.
+Installiere oder lade noch nichts herunter.</pre><div class="warn card"><b>Wichtig:</b> Hardwareangaben des Herstellers sind nur der Ausgangspunkt. Auf dem tatsächlichen Workshop-Gerät prüfen.</div></section>
+<section><h2>2. LM Studio installieren</h2><div class="grid"><article class="card"><h3>Windows</h3><ol class="steps"><li>Offiziellen Installer von <a href="https://lmstudio.ai/">lmstudio.ai</a> laden.</li><li>Installieren und starten.</li><li>In Discover ein instruct-fähiges GGUF-Modell wählen.</li></ol></article><article class="card"><h3>Linux</h3><ol class="steps"><li>Aktuelles offizielles Linux-Paket laden.</li><li>Ausführbar machen oder distributionsgerecht installieren.</li><li>App starten und Modell laden.</li></ol></article></div><p class="meta">Aktuelle Anforderungen: <a href="https://www.lmstudio.ai/docs/app/system-requirements">LM Studio system requirements</a>. Derzeit werden 16 GB RAM und 4 GB dedizierter VRAM empfohlen.</p></section>
+<section><h2>3. Modell auswählen</h2><table><thead><tr><th>Profil</th><th>Startpunkt</th><th>Typische Aufgabe</th></tr></thead><tbody><tr><td>Sicher</td><td>3B–7B, Q4</td><td>Klassifikation, Zusammenfassung, Extraktion</td></tr><tr><td>Ausgewogen</td><td>7B–14B, Q4</td><td>Schreiben, einfache Analyse, begrenzte Tools</td></tr><tr><td>Experimentell</td><td>größer / längerer Kontext</td><td>Nur wenn Speicher und Geschwindigkeit reichen</td></tr></tbody></table><p>Tool-Aufrufe separat testen: Ein gutes Chatmodell ist nicht automatisch ein guter Agentenmotor.</p></section>
+<section><h2>4. Local Server starten</h2><ol class="steps"><li>Modell vollständig laden.</li><li>Developer-Bereich öffnen.</li><li>Local Server starten.</li><li>Adresse notieren, standardmäßig häufig <code>http://127.0.0.1:1234/v1</code>.</li></ol><p class="meta"><a href="https://lmstudio.ai/docs/developer/core/server">Offizielle Server-Dokumentation</a></p></section>
+<section><h2>5. Hermes verbinden</h2><pre>Provider type: OpenAI-compatible
+Base URL: http://127.0.0.1:1234/v1
+API key: lm-studio
+Model: exakt der in LM Studio angezeigte Modellname</pre><ul class="checklist"><li>Zuerst einfacher Chat-Test.</li><li>Dann strukturierte Ausgabe testen.</li><li>Erst danach Datei- oder Toolzugriff testen.</li><li>Bei Fehlern Modellname, Serverstatus und URL prüfen.</li></ul></section>
+<section><h2>6. Fairer Lokal-/Cloud-Test</h2><pre>Fasse das folgende fiktive Sitzungsprotokoll in genau 5 Punkten zusammen.
+Extrahiere Entscheidungen und nächste Schritte als Markdown-Tabelle.
+Erfinde nichts. Markiere fehlende Verantwortliche mit „nicht angegeben“.
+Nenne am Ende zwei Unsicherheiten im Ausgangstext.</pre><table><thead><tr><th>Kriterium</th><th>Lokal</th><th>Cloud</th></tr></thead><tbody><tr><td>Zeit bis zur Antwort</td><td></td><td></td></tr><tr><td>Korrekte Extraktion</td><td></td><td></td></tr><tr><td>Format eingehalten</td><td></td><td></td></tr><tr><td>Halluzinationen</td><td></td><td></td></tr><tr><td>Datenschutz / Kosten</td><td></td><td></td></tr></tbody></table></section>
+</main><footer>Modelle und Anforderungen ändern sich schnell: vor dem Workshop erneut prüfen.</footer></body></html>

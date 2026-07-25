@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Drei Stufen vom Gespräch über Unterstützung zum selbstständigen Handeln">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#eaf6f4"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="960" height="520" rx="40" fill="url(#bg)"/>
+  <g filter="url(#shadow)" stroke-width="5">
+    <rect x="55" y="80" width="235" height="355" rx="28" fill="#fff" stroke="#7ab8b2"/>
+    <rect x="362" y="80" width="235" height="355" rx="28" fill="#fff" stroke="#e2ae5f"/>
+    <rect x="670" y="80" width="235" height="355" rx="28" fill="#fff" stroke="#16395c"/>
+  </g>
+
+  <!-- Gespräch: zwei Sprechblasen -->
+  <g fill="none" stroke="#16395c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M98 143h112a22 22 0 0 1 22 22v54a22 22 0 0 1-22 22h-42l-30 27v-27H98a22 22 0 0 1-22-22v-54a22 22 0 0 1 22-22z"/>
+    <path d="M139 279h92a19 19 0 0 1 19 19v43a19 19 0 0 1-19 19h-25v23l-26-23h-41a19 19 0 0 1-19-19v-43a19 19 0 0 1 19-19z"/>
+  </g>
+  <g fill="#7ab8b2"><circle cx="119" cy="193" r="7"/><circle cx="151" cy="193" r="7"/><circle cx="183" cy="193" r="7"/></g>
+
+  <!-- Assistenz: Dokument plus helfende Hand -->
+  <g fill="none" stroke="#16395c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M420 126h116l27 28v158H420z"/>
+    <path d="M536 126v31h27M451 194h79M451 230h66M451 266h72"/>
+    <path d="M400 350c38-5 58 4 82 25 22-24 50-31 89-24"/>
+    <path d="M401 350l13 44h132l26-43"/>
+  </g>
+  <circle cx="480" cy="375" r="13" fill="#e2ae5f"/>
+
+  <!-- Agent: Ziel, Werkzeug und erledigter Haken -->
+  <g fill="none" stroke="#16395c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="787" cy="181" r="58"/>
+    <circle cx="787" cy="181" r="30"/>
+    <path d="M787 181l73-58M835 123h25v25"/>
+    <path d="M723 309l31 31 69-77"/>
+    <path d="M714 387h146"/>
+  </g>
+  <circle cx="787" cy="181" r="9" fill="#e2ae5f"/>
+
+  <g fill="#16395c" font-family="Arial, sans-serif" font-size="26" font-weight="800" text-anchor="middle">
+    <text x="172" y="472">1</text><text x="480" y="472">2</text><text x="788" y="472">3</text>
+  </g>
+</svg>
