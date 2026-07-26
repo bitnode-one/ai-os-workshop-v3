@@ -2,6 +2,15 @@
 
 Diese Kriterien gelten ab V3 für jedes Release.
 
+## 0. Eingefrorene Workshop-Baseline
+
+- Release `3.0.1` mit 63 Folien und Git-Commit `f54bbcc` ist die eingefrorene Workshop-Baseline.
+- Neue Inhalte werden grundsätzlich als zusätzliche Folien angehängt.
+- Bestehende Folien dürfen nur verändert werden, wenn eine Anforderung die jeweilige Folie ausdrücklich nennt.
+- Nicht ausdrücklich genannte Folien bleiben in Inhalt, Reihenfolge und Gestaltung unverändert.
+- Vollständige oder teilweise Entfernungen benötigen weiterhin eine vorherige Genehmigung gemäß `REMOVAL-APPROVALS.json`.
+- Jede erlaubte Korrektur nennt im Changelog die betroffene Folie und den Änderungsgrund.
+
 ## 1. Inhaltsvollständigkeit
 
 - Jedes Release führt ein maschinenlesbares `CONTENT-MANIFEST.json`.

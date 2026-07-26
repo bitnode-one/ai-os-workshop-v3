@@ -1,6 +1,6 @@
 # KI-Agenten für den Alltag · Workshop V3
 
-Konsolidiertes, bilinguales Release für einen vierstündigen Workshop mit 63 Folien, Hermes-Desktop-Demos, LM-Studio-Praxis und vollständigen Handouts.
+Konsolidiertes, bilinguales Release für einen vierstündigen Workshop mit 65 Folien, Hermes-Desktop-Demos, LM-Studio-Praxis und vollständigen Handouts.
 
 ## Online öffnen
 

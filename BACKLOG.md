@@ -25,6 +25,8 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 
 ## P1 · Sollte für V3
 
+- [x] Bilinguales Referentenprofil mit lokalem Profilfoto und LinkedIn ergänzen
+- [x] CC-BY-SA-4.0-Lizenzfolie einschließlich Drittmaterial-Hinweis ergänzen
 - [x] Illustrationen für Modell, Kontext, Harness, Memory, Skills, MCP und Loops erstellen
 - [ ] Offline-Fallback für News-Demo bereitstellen
 - [ ] Trainerhinweise und erwartete Demo-Ergebnisse ergänzen
@@ -41,6 +43,9 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 
 ## Entscheidungsregeln
 
+- Release 3.0.1 mit 63 Folien ist die eingefrorene Workshop-Baseline.
+- Neue Inhalte werden angehängt; bestehende Folien bleiben unverändert.
+- Korrekturen sind nur an ausdrücklich genannten Folien zulässig.
 - Inhalte werden nicht stillschweigend entfernt.
 - Jede Entfernung benötigt vorab einen Eintrag in `REMOVAL-APPROVALS.json`.
 - Entfernte oder wesentlich gekürzte Inhalte werden im `CHANGELOG.md` dokumentiert.

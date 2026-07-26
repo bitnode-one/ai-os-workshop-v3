@@ -2,6 +2,20 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## 3.1.0 · 2026-07-27
+
+### Hinzugefügt
+
+- Folie 64: bilinguales Profil von Max Peter mit lokal eingebettetem Profilfoto und aktivem LinkedIn-Link
+- Folie 65: bilinguale Lizenzinformation zu CC BY-SA 4.0 einschließlich Hinweis auf ausgenommenes Drittmaterial
+- Release 3.0.1 mit 63 Folien und Git-Commit `f54bbcc` als unveränderliche Workshop-Baseline festgeschrieben
+- Additive Änderungsregel: neue Inhalte werden angehängt; Korrekturen sind nur an ausdrücklich genannten Folien zulässig
+
+### Unverändert
+
+- Alle bisherigen 63 Präsentationsfolien
+- Sämtliche Handouts, Übungen, Demos und Setup-Anleitungen
+
 ## 3.0.1 · 2026-07-25
 
 ### Korrigiert

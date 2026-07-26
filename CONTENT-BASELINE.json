@@ -1,6 +1,13 @@
 {
   "schemaVersion": 1,
   "policy": "Append-only. IDs werden nie gelöscht, sondern bei genehmigter Entfernung über REMOVAL-APPROVALS.json ausgesteuert.",
+  "frozenRelease": {
+    "version": "3.0.1",
+    "date": "2026-07-25",
+    "gitCommit": "f54bbcc",
+    "slideCount": 63,
+    "rule": "Bestehende Folien bleiben unverändert. Ergänzungen werden angehängt; Korrekturen erfolgen nur an ausdrücklich genannten Folien."
+  },
   "contentIds": [
     "opening-outcomes",
     "history-ai",
@@ -34,7 +41,9 @@
     "local-cloud-comparison",
     "agent-canvas",
     "quality-review",
-    "seven-day-plan"
+    "seven-day-plan",
+    "speaker-profile",
+    "presentation-license"
   ],
   "handoutIds": [
     "handout-quickstart",

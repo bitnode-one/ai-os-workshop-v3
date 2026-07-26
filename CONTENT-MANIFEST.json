@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "3.0.1",
+  "release": "3.1.0",
   "verificationStatus": "automated-checks-passed",
   "baselines": ["v1", "v2"],
   "allowedStatuses": ["planned", "implemented", "verified", "removed"],
@@ -38,6 +38,8 @@
     {"id": "agent-canvas", "title": "Eigener Mini-Agent und Agent Canvas", "required": true, "status": "planned", "sources": ["v1", "v2"]},
     {"id": "quality-review", "title": "Qualitätsprüfung und Vorstellung", "required": true, "status": "planned", "sources": ["v1"]},
     {"id": "seven-day-plan", "title": "7-Tage-Plan und Transfer", "required": true, "status": "planned", "sources": ["v1", "v2"]},
+    {"id": "speaker-profile", "title": "Bilinguales Referentenprofil mit Foto und LinkedIn", "required": true, "status": "implemented", "sources": ["v3.1"]},
+    {"id": "presentation-license", "title": "CC-BY-SA-4.0-Lizenz und Hinweise zu Drittmaterial", "required": true, "status": "implemented", "sources": ["v3.1"]},
     {"id": "internal-codex-device-setup", "title": "Interne Codex- und Präsentationsgeräte-Empfehlung", "required": false, "status": "removed", "sources": ["v3.0.0"]},
     {"id": "internal-device-infrastructure", "title": "Interner Surface-Book-, MINISFORUM- und Remote-Infrastrukturvergleich", "required": false, "status": "removed", "sources": ["v3.0.0"]}
   ],
