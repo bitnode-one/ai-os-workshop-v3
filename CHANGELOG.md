@@ -2,6 +2,23 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## 3.3.0 · 2026-07-27
+
+### PDF-Publikation
+
+- Eigenständiges A4-Printdesign im Stil der Handout-Webseiten mit Farben, Karten, Codeblöcken und Tabellen erstellt
+- Playwright-Generator für sechs Einzel-PDFs und ein zusammengeführtes Gesamtpaket ergänzt
+- Klickbare Links, Dokumentmetadaten, Seitenzahlen sowie Max-Peter- und CC-BY-SA-Footer integriert
+- Direkte PDF-Downloadlinks in allen Handouts und auf der Handout-Übersicht ergänzt
+- Browser-Druckdialog als Offline-Fallback beibehalten
+- Automatische PDF-Erzeugung in den GitHub-Pages-Workflow integriert
+- PDF-Seiten vollständig gerendert und visuell auf Umbrüche, Lesbarkeit und Layoutfehler geprüft
+
+### Unverändert
+
+- Inhalte und Reihenfolge aller 65 Präsentationsfolien
+- Inhaltliche Substanz der bestehenden Handouts und Übungen
+
 ## 3.2.0 · 2026-07-27
 
 ### Handouts erweitert

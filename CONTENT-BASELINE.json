@@ -71,6 +71,7 @@
     "feature-print",
     "feature-license-all-slides",
     "feature-handout-profile-license",
-    "feature-handout-pdf-export"
+    "feature-handout-pdf-export",
+    "feature-generated-handout-pdfs"
   ]
 }

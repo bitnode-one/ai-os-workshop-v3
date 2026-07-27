@@ -32,6 +32,13 @@ const requiredFiles = [
   "handouts/local-ai.html",
   "handouts/security.html",
   "handouts/handouts.js",
+  "handouts/pdf/handouts-uebersicht.pdf",
+  "handouts/pdf/00-grundbegriffe.pdf",
+  "handouts/pdf/01-hermes-quickstart.pdf",
+  "handouts/pdf/02-uebungen-prompts.pdf",
+  "handouts/pdf/03-lokale-ki-lm-studio.pdf",
+  "handouts/pdf/04-sicherheit-troubleshooting.pdf",
+  "handouts/pdf/ai-os-workshop-handouts-komplett.pdf",
   "LICENSE.md"
 ];
 
@@ -43,7 +50,7 @@ for (const file of requiredFiles) {
 const htmlFiles = [];
 async function walk(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
-    if (entry.name === ".git") continue;
+    if ([".git", "node_modules"].includes(entry.name)) continue;
     const absolute = join(directory, entry.name);
     if (entry.isDirectory()) await walk(absolute);
     else if (extname(entry.name) === ".html") htmlFiles.push(absolute);

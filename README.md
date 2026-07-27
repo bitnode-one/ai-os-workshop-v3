@@ -65,10 +65,22 @@ für das Lesen im Hochformat optimiert.
 
 ### Handouts als PDF
 
-Jedes Handout bietet unten rechts die Schaltfläche **Als PDF speichern**. Sie
-öffnet den Druckdialog des Browsers. Dort **Als PDF speichern** beziehungsweise
-auf Android **Drucken → Als PDF speichern** auswählen. Dadurch bleibt der Export
-offline nutzbar und entspricht immer dem aktuellen Stand des Handouts.
+Jedes Handout bietet unten rechts einen direkten **PDF herunterladen**-Link.
+Zusätzlich steht auf der Handout-Übersicht ein zusammengeführtes Gesamtpaket zur
+Verfügung. Die PDFs übernehmen Farben, Karten, Typografie, Profil, klickbare
+Links, CC-BY-SA-Hinweis und Seitenzahlen aus dem Webdesign.
+
+Der zusätzliche Button **Druckdialog** bleibt als Fallback verfügbar. Dort kann
+im Browser oder unter Android weiterhin **Als PDF speichern** gewählt werden.
+
+PDFs lokal neu erzeugen:
+
+```powershell
+npm install
+npm run build:pdf
+```
+
+Beim GitHub-Pages-Deployment werden alle PDFs automatisch neu gebaut.
 
 ## Qualität
 
