@@ -29,6 +29,9 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 - [x] CC-BY-SA-4.0-Lizenzfolie einschließlich Drittmaterial-Hinweis ergänzen
 - [x] Profil und Lizenzbedingungen im Repository dokumentieren
 - [x] Klickbaren CC-BY-SA-4.0-Hinweis auf jeder Folie anzeigen
+- [x] Referentenprofil und CC-BY-SA-4.0-Hinweis in die Handouts übernehmen
+- [x] Hermes-Quickstart um geprüfte Windows- und Linux-Installationsbefehle ergänzen
+- [x] PDF-Export für jedes Handout anbieten
 - [x] Illustrationen für Modell, Kontext, Harness, Memory, Skills, MCP und Loops erstellen
 - [ ] Offline-Fallback für News-Demo bereitstellen
 - [ ] Trainerhinweise und erwartete Demo-Ergebnisse ergänzen

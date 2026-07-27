@@ -2,6 +2,23 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## 3.2.0 · 2026-07-27
+
+### Handouts erweitert
+
+- Referentenprofil mit Profilfoto, Schwerpunkten und LinkedIn auf der Handout-Übersicht ergänzt
+- Einheitlichen Footer mit Max Peter, LinkedIn, CC BY-SA 4.0 und Drittmaterial-Hinweis in alle Handouts integriert
+- Hermes-Quickstart um offiziellen Windows-PowerShell-Installer, Prüfung und Desktop-Start ergänzt
+- Linux-Quickstart für Debian/Ubuntu um Voraussetzungen, offiziellen Installer, Diagnose, Desktop-Build und Nous-Portal-Setup ergänzt
+- Aktualitätsstand und Links zu offizieller Installation und Plattformmatrix ergänzt
+- Schaltfläche „Als PDF speichern“ in jedes Handout integriert; Export erfolgt offline über den Browser-Druckdialog
+- Automatische Prüfung für gemeinsame Handout-Lizenz- und PDF-Funktion ergänzt
+
+### Unverändert
+
+- Inhalte und Reihenfolge aller 65 Präsentationsfolien
+- Bestehende Übungen, Prompts und LM-Studio-Anleitungen
+
 ## 3.1.1 · 2026-07-27
 
 ### Hinzugefügt

@@ -63,6 +63,13 @@ npm run workshop
 Auf Android die Präsentation im Querformat öffnen. Die Handouts sind zusätzlich
 für das Lesen im Hochformat optimiert.
 
+### Handouts als PDF
+
+Jedes Handout bietet unten rechts die Schaltfläche **Als PDF speichern**. Sie
+öffnet den Druckdialog des Browsers. Dort **Als PDF speichern** beziehungsweise
+auf Android **Drucken → Als PDF speichern** auswählen. Dadurch bleibt der Export
+offline nutzbar und entspricht immer dem aktuellen Stand des Handouts.
+
 ## Qualität
 
 ```powershell

@@ -31,6 +31,7 @@ const requiredFiles = [
   "handouts/exercises.html",
   "handouts/local-ai.html",
   "handouts/security.html",
+  "handouts/handouts.js",
   "LICENSE.md"
 ];
 
@@ -77,6 +78,15 @@ if (!html.includes("data-content-id=")) throw new Error("Governance-IDs fehlen."
 const deckScript = await readFile(join(root, "assets/js/deck.js"), "utf8");
 if (!deckScript.includes('className = "slide-license"') || !deckScript.includes("creativecommons.org/licenses/by-sa/4.0/")) {
   throw new Error("Klickbarer CC-BY-SA-Hinweis auf allen Folien fehlt.");
+}
+
+const handoutScript = await readFile(join(root, "handouts/handouts.js"), "utf8");
+if (!handoutScript.includes("window.print()") || !handoutScript.includes("CC BY-SA 4.0") || !handoutScript.includes("maxpeter")) {
+  throw new Error("Gemeinsamer PDF-, Lizenz- oder Profilhinweis der Handouts fehlt.");
+}
+for (const file of htmlFiles.filter((file) => file.includes(`${join("", "handouts")}`))) {
+  const source = await readFile(file, "utf8");
+  if (!source.includes('src="handouts.js"')) throw new Error(`Handout-Funktionen fehlen in ${relative(root, file)}.`);
 }
 
 console.log(`OK: ${slides.length} Folien, ${htmlFiles.length - 1} Handout-Seiten, lokale Assets und Links geprüft.`);

@@ -69,6 +69,8 @@
     "feature-lan-android",
     "feature-offline",
     "feature-print",
-    "feature-license-all-slides"
+    "feature-license-all-slides",
+    "feature-handout-profile-license",
+    "feature-handout-pdf-export"
   ]
 }

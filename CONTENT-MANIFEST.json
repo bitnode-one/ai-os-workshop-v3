@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "3.1.1",
+  "release": "3.2.0",
   "verificationStatus": "automated-checks-passed",
   "baselines": ["v1", "v2"],
   "allowedStatuses": ["planned", "implemented", "verified", "removed"],
@@ -67,6 +67,8 @@
     {"id": "feature-lan-android", "title": "LAN- und Android-Unterstützung", "required": true, "status": "planned"},
     {"id": "feature-offline", "title": "Offline lauffähig ohne externe Laufzeitabhängigkeiten", "required": true, "status": "planned"},
     {"id": "feature-print", "title": "Druckbare Handouts und sprachgetrennte PDF-Ausgabe", "required": true, "status": "planned"},
-    {"id": "feature-license-all-slides", "title": "Klickbarer CC-BY-SA-4.0-Hinweis auf jeder Präsentationsfolie", "required": true, "status": "implemented"}
+    {"id": "feature-license-all-slides", "title": "Klickbarer CC-BY-SA-4.0-Hinweis auf jeder Präsentationsfolie", "required": true, "status": "implemented"},
+    {"id": "feature-handout-profile-license", "title": "Referentenprofil und CC-BY-SA-Lizenzhinweis in allen Handouts", "required": true, "status": "implemented"},
+    {"id": "feature-handout-pdf-export", "title": "Offlinefähiger PDF-Export für jedes Handout über den Browser-Druckdialog", "required": true, "status": "implemented"}
   ]
 }
