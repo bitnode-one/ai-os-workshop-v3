@@ -2,6 +2,20 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## 3.1.1 · 2026-07-27
+
+### Hinzugefügt
+
+- Referentenprofil und LinkedIn-Link in der Repository-README
+- Eigenständige `LICENSE.md` mit CC-BY-SA-4.0-Bedingungen, Attributionsvorschlag und Ausnahmen
+- Dezenter, klickbarer Hinweis `© Max Peter · CC BY-SA 4.0` auf allen 65 Präsentationsfolien
+- Automatischer Regressionstest für den folienweiten Lizenzhinweis
+
+### Unverändert
+
+- Inhalte und Reihenfolge aller 65 Folien
+- Sämtliche Handouts, Übungen, Demos und Setup-Anleitungen
+
 ## 3.1.0 · 2026-07-27
 
 ### Hinzugefügt

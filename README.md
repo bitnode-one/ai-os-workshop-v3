@@ -2,6 +2,20 @@
 
 Konsolidiertes, bilinguales Release für einen vierstündigen Workshop mit 65 Folien, Hermes-Desktop-Demos, LM-Studio-Praxis und vollständigen Handouts.
 
+## Referent
+
+**Max Peter** ist Unternehmer, Researcher und Referent für Künstliche Intelligenz,
+Agentic AI, IT-Sicherheit und dezentrale digitale Systeme. Er studiert Politik &
+Technologie an der Hochschule für Politik München / TUM School of Social Sciences
+and Technology und verbindet Forschung zu Political Data Science, Big Data,
+KI-Ethik, Agentic AI und Cybersecurity Governance mit praktischer Erfahrung als
+Datenschutz- und Informationssicherheitsauditor.
+
+Schwerpunkte: KI-Kompetenz, sichere KI-Nutzung, KI-Governance, lokale und offene
+KI-Systeme, Datenschutz, ISMS und digitale Selbstbestimmung.
+
+[LinkedIn-Profil von Max Peter](https://www.linkedin.com/in/maxpeter/)
+
 ## Online öffnen
 
 Nach Aktivierung von GitHub Pages ist die Präsentation direkt erreichbar:
@@ -58,3 +72,16 @@ npm run check:notebook
 ```
 
 Inhalte dürfen nicht ohne vorherige Genehmigung und dokumentierten Löschantrag entfernt werden.
+
+## Lizenz
+
+Sofern nicht anders gekennzeichnet, stehen Präsentation, Handouts und eigene
+Workshop-Inhalte unter der Lizenz
+[Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+(`CC BY-SA 4.0`).
+
+Bei Weiterverwendung ist **Max Peter** als Urheber zu nennen. Änderungen sind zu
+kennzeichnen und abgeleitete Fassungen unter derselben Lizenz bereitzustellen.
+Fremde Logos, Screenshots, Studiengrafiken und andere gekennzeichnete Inhalte
+sind ausgenommen und unterliegen den Rechten ihrer jeweiligen Urheber. Details
+stehen in [`LICENSE.md`](LICENSE.md) und [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).

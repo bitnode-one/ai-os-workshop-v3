@@ -15,6 +15,18 @@ let suppressClickUntil = 0;
 let timerHandle;
 let timerRemaining = 8 * 60;
 
+for (const slide of slides) {
+  const license = document.createElement("a");
+  license.className = "slide-license";
+  license.href = "https://creativecommons.org/licenses/by-sa/4.0/";
+  license.target = "_blank";
+  license.rel = "license noreferrer";
+  license.title = "Max Peter · Creative Commons BY-SA 4.0";
+  license.setAttribute("aria-label", "Max Peter · Creative Commons BY-SA 4.0");
+  license.textContent = "© Max Peter · CC BY-SA 4.0";
+  slide.append(license);
+}
+
 function titleFor(slide) {
   return language === "de" ? slide.dataset.titleDe : slide.dataset.titleEn;
 }

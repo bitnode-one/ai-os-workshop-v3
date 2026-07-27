@@ -68,6 +68,7 @@
     "feature-local-qr",
     "feature-lan-android",
     "feature-offline",
-    "feature-print"
+    "feature-print",
+    "feature-license-all-slides"
   ]
 }

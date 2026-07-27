@@ -30,7 +30,8 @@ const requiredFiles = [
   "handouts/quickstart.html",
   "handouts/exercises.html",
   "handouts/local-ai.html",
-  "handouts/security.html"
+  "handouts/security.html",
+  "LICENSE.md"
 ];
 
 for (const file of requiredFiles) {
@@ -72,5 +73,10 @@ if (/https?:\/\/[^"')\s]+\.(?:js|css)/i.test(html)) {
 if (!html.includes("assets/vendor/qrcode.js")) throw new Error("Lokale QR-Bibliothek fehlt.");
 if (!html.includes('class="home"')) throw new Error("Home-Button fehlt.");
 if (!html.includes("data-content-id=")) throw new Error("Governance-IDs fehlen.");
+
+const deckScript = await readFile(join(root, "assets/js/deck.js"), "utf8");
+if (!deckScript.includes('className = "slide-license"') || !deckScript.includes("creativecommons.org/licenses/by-sa/4.0/")) {
+  throw new Error("Klickbarer CC-BY-SA-Hinweis auf allen Folien fehlt.");
+}
 
 console.log(`OK: ${slides.length} Folien, ${htmlFiles.length - 1} Handout-Seiten, lokale Assets und Links geprüft.`);

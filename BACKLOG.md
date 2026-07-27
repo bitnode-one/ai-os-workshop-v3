@@ -27,6 +27,8 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 
 - [x] Bilinguales Referentenprofil mit lokalem Profilfoto und LinkedIn ergänzen
 - [x] CC-BY-SA-4.0-Lizenzfolie einschließlich Drittmaterial-Hinweis ergänzen
+- [x] Profil und Lizenzbedingungen im Repository dokumentieren
+- [x] Klickbaren CC-BY-SA-4.0-Hinweis auf jeder Folie anzeigen
 - [x] Illustrationen für Modell, Kontext, Harness, Memory, Skills, MCP und Loops erstellen
 - [ ] Offline-Fallback für News-Demo bereitstellen
 - [ ] Trainerhinweise und erwartete Demo-Ergebnisse ergänzen
