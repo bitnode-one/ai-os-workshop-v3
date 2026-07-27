@@ -2,6 +2,19 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## 3.3.1 · 2026-07-27
+
+### Hermes-Quickstart ergänzt
+
+- Fedora-Voraussetzungen mit `dnf` für Git, curl, xz, C++-Compiler und make ergänzt
+- Fedora-Entwicklungswerkzeuggruppe als alternative Installation dokumentiert
+- Hermes-Einzel-PDF und vollständiges Handout-Paket neu erzeugt
+
+### Unverändert
+
+- Inhalte und Reihenfolge aller 65 Präsentationsfolien
+- Alle nicht ausdrücklich genannten Handout-Inhalte
+
 ## 3.3.0 · 2026-07-27
 
 ### PDF-Publikation
