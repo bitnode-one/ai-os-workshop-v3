@@ -2,6 +2,8 @@
 
 Konsolidiertes, bilinguales Release für einen vierstündigen Workshop mit 65 Folien, Hermes-Desktop-Demos, LM-Studio-Praxis und vollständigen Handouts.
 
+**Aktueller eingefrorener Stand:** Release `3.3.2`, 65 Folien, validierter Inhalts-Commit `7f608ad`. Die ausgelieferten Dateien werden zusätzlich über `baselines/3.3.2.json` geprüft.
+
 ## Referent
 
 **Max Peter** ist Unternehmer, Researcher und Referent für Künstliche Intelligenz,
@@ -86,11 +88,13 @@ Beim GitHub-Pages-Deployment werden alle PDFs automatisch neu gebaut.
 
 ```powershell
 npm run check
+npm run check:baseline
 npm run check:governance
 npm run check:notebook
 ```
 
 Inhalte dürfen nicht ohne vorherige Genehmigung und dokumentierten Löschantrag entfernt werden.
+Die verbindlichen Learnings für weitere Releases stehen in [`LESSONS-LEARNED.md`](LESSONS-LEARNED.md).
 
 ## Lizenz
 

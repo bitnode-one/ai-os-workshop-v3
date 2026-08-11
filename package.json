@@ -10,7 +10,8 @@
     "start:lan:open": "node tools/serve.mjs --lan --open",
     "workshop": "node tools/serve.mjs --lan --open",
     "build:pdf": "node tools/build-pdfs.mjs",
-    "check": "node tools/check.mjs",
+    "check": "node tools/check.mjs && node tools/check-release-baseline.mjs",
+    "check:baseline": "node tools/check-release-baseline.mjs",
     "check:governance": "node tools/check-governance.mjs .",
     "check:notebook": "pwsh -File tools/check-notebook.ps1"
   },

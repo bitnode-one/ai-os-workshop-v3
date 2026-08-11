@@ -4,7 +4,10 @@ Diese Kriterien gelten ab V3 für jedes Release.
 
 ## 0. Eingefrorene Workshop-Baseline
 
-- Release `3.0.1` mit 63 Folien und Git-Commit `f54bbcc` ist die eingefrorene Workshop-Baseline.
+- Release `3.3.2` mit 65 Folien und validiertem Inhalts-Commit `7f608ad` ist die aktuelle eingefrorene Workshop-Baseline.
+- Release `3.0.1` mit 63 Folien und Git-Commit `f54bbcc` bleibt als historische Konsolidierungsbasis dokumentiert.
+- Die Datei `baselines/3.3.2.json` hält kryptografische Prüfsummen der ausgelieferten Präsentations-, Grafik- und Handout-Dateien fest.
+- Änderungen an eingefrorenen Dateien erfordern eine neue Release-Version, einen Changelog-Eintrag und eine bewusst neu erzeugte Baseline.
 - Neue Inhalte werden grundsätzlich als zusätzliche Folien angehängt.
 - Bestehende Folien dürfen nur verändert werden, wenn eine Anforderung die jeweilige Folie ausdrücklich nennt.
 - Nicht ausdrücklich genannte Folien bleiben in Inhalt, Reihenfolge und Gestaltung unverändert.
@@ -53,6 +56,8 @@ Diese Kriterien gelten ab V3 für jedes Release.
 - Illustrationen und Diagramme unterstützen das Verständnis und sind keine reine Dekoration.
 - Bedienelemente überdecken weder Kapitelmarken noch Folieninhalte.
 - Kontrast, Schriftgröße, Projektorlesbarkeit und Farbsinnstörungen werden geprüft.
+- Sprachabhängige Grafiken verwenden genau ein DOM-Bild; beim Umschalten wird dessen Quelle ersetzt.
+- Eine DE/EN-Matrixprüfung kontrolliert bei jeder lokalisierten Grafik Bildanzahl, Bildquelle und sichtbare Sprache.
 
 ## 6. Bedienung und Technik
 
@@ -74,14 +79,19 @@ Diese Kriterien gelten ab V3 für jedes Release.
 6. Genehmigung in `REMOVAL-APPROVALS.json` dokumentieren.
 7. Changelog aktualisieren.
 8. Inhalts-, Layout-, Handout- und Technikchecks ausführen.
-9. Erst danach ein neues Release kennzeichnen.
+9. Browser-Cache-Buster auf die neue Release-Version setzen.
+10. Visuelle Stichprobe aller geänderten Folien in DE und EN durchführen.
+11. Prüfsummen-Baseline erzeugen und `npm run check:baseline` ausführen.
+12. Erst danach ein neues Release kennzeichnen.
 
 ## 8. Definition of Done
 
 - `npm run check`
+- `npm run check:baseline`
 - `npm run check:governance`
 - Keine ungeklärten P0-Punkte
 - Keine ungenehmigten entfernten Pflichtinhalte
 - Desktop- und Android-QA bestanden
 - DE/EN-Parität bestanden
+- Pro lokalisierter Folie genau eine sichtbare Grafik
 - Handout- und Druck-QA bestanden

@@ -18,6 +18,12 @@ Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hi
 - Inhalte und Reihenfolge aller 65 Präsentationsfolien
 - Alle nicht ausdrücklich genannten Folien und Handouts
 
+### Baseline eingefroren
+
+- Release 3.3.2 nach erfolgreicher Regression-, Governance- und visueller DE/EN-Prüfung als neue Workshop-Baseline festgehalten
+- Validierten Inhalts-Commit `7f608ad`, 65 Folien und Release-Historie in den Steuerdateien dokumentiert
+- Prüfsummen-Baseline und verbindliche Lessons Learned für kommende Releases ergänzt
+
 ## 3.3.1 · 2026-07-27
 
 ### Hermes-Quickstart ergänzt

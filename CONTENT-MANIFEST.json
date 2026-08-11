@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "3.3.1",
-  "verificationStatus": "automated-checks-passed",
+  "release": "3.3.2",
+  "verificationStatus": "frozen-verified-baseline",
   "baselines": ["v1", "v2"],
   "allowedStatuses": ["planned", "implemented", "verified", "removed"],
   "contentBlocks": [
@@ -70,6 +70,9 @@
     {"id": "feature-license-all-slides", "title": "Klickbarer CC-BY-SA-4.0-Hinweis auf jeder Präsentationsfolie", "required": true, "status": "implemented"},
     {"id": "feature-handout-profile-license", "title": "Referentenprofil und CC-BY-SA-Lizenzhinweis in allen Handouts", "required": true, "status": "implemented"},
     {"id": "feature-handout-pdf-export", "title": "Offlinefähiger PDF-Export für jedes Handout über den Browser-Druckdialog", "required": true, "status": "implemented"},
-    {"id": "feature-generated-handout-pdfs", "title": "Automatisch erzeugte, webdesign-nahe Einzel- und Gesamt-PDFs mit direkten Downloads", "required": true, "status": "implemented"}
+    {"id": "feature-generated-handout-pdfs", "title": "Automatisch erzeugte, webdesign-nahe Einzel- und Gesamt-PDFs mit direkten Downloads", "required": true, "status": "implemented"},
+    {"id": "feature-single-image-localization", "title": "Sprachgrafiken mit genau einem DOM-Bild und dynamischem Quellenwechsel", "required": true, "status": "verified"},
+    {"id": "feature-versioned-runtime-assets", "title": "Versionsgebundene CSS- und JavaScript-URLs gegen veraltete Browser-Caches", "required": true, "status": "verified"},
+    {"id": "feature-release-checksum-baseline", "title": "Hash-basierte Prüfung der eingefrorenen Release-Dateien", "required": true, "status": "verified"}
   ]
 }

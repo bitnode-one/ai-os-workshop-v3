@@ -9,7 +9,9 @@ const requiredFiles = [
   "CONTENT-MANIFEST.json",
   "REMOVAL-APPROVALS.json",
   "REMOVAL-REQUEST-TEMPLATE.md",
-  "NOTEBOOK-SETUP.md"
+  "NOTEBOOK-SETUP.md",
+  "LESSONS-LEARNED.md",
+  "baselines/3.3.2.json"
 ];
 
 for (const file of requiredFiles) {
@@ -21,6 +23,10 @@ const manifest = JSON.parse(await readFile(new URL("CONTENT-MANIFEST.json", root
 const baseline = JSON.parse(await readFile(new URL("CONTENT-BASELINE.json", root), "utf8"));
 const removals = JSON.parse(await readFile(new URL("REMOVAL-APPROVALS.json", root), "utf8"));
 const groups = ["contentBlocks", "handouts", "features"];
+
+if (manifest.release !== baseline.frozenRelease.version) {
+  throw new Error(`Manifest ${manifest.release} und eingefrorene Baseline ${baseline.frozenRelease.version} stimmen nicht überein.`);
+}
 const entries = groups.flatMap((group) => manifest[group] || []);
 const ids = new Set();
 

@@ -21,6 +21,9 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 - [x] QR- und Bedienelemente außerhalb der Inhaltsfläche anordnen
 - [x] QR-Code vollständig lokal erzeugen
 - [x] Deutsch/Englisch-Parität prüfen
+- [x] Sprachgrafiken auf robuste Ein-Bild-Umschaltung ohne Doppelanzeige umstellen
+- [x] Automatischen Test gegen doppelte Sprachgrafiken und veraltete Cache-Dateien ergänzen
+- [x] Release 3.3.2 als geprüfte Prüfsummen-Baseline einfrieren
 - [x] Desktop-, Android-, Druck- und Offline-QA durchführen
 
 ## P1 · Sollte für V3
@@ -52,10 +55,13 @@ Dieses Backlog ist die verbindliche Arbeitsliste für V3 und folgende Releases. 
 
 ## Entscheidungsregeln
 
-- Release 3.0.1 mit 63 Folien ist die eingefrorene Workshop-Baseline.
+- Release 3.3.2 mit 65 Folien und validiertem Inhalts-Commit `7f608ad` ist die aktuelle eingefrorene Workshop-Baseline.
+- Release 3.0.1 bleibt als historische Konsolidierungsbasis erhalten.
 - Neue Inhalte werden angehängt; bestehende Folien bleiben unverändert.
 - Korrekturen sind nur an ausdrücklich genannten Folien zulässig.
 - Inhalte werden nicht stillschweigend entfernt.
 - Jede Entfernung benötigt vorab einen Eintrag in `REMOVAL-APPROVALS.json`.
 - Entfernte oder wesentlich gekürzte Inhalte werden im `CHANGELOG.md` dokumentiert.
 - Neue Releases müssen `npm run check:governance` bestehen.
+- Änderungen an ausgelieferten Dateien erfordern eine neue Version und eine neue Prüfsummen-Baseline.
+- Lokalisierte Grafiken bestehen aus einem Bild mit sprachabhängiger Quelle, nicht aus zwei parallel gerenderten Bildern.

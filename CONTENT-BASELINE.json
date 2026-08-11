@@ -2,12 +2,28 @@
   "schemaVersion": 1,
   "policy": "Append-only. IDs werden nie gelöscht, sondern bei genehmigter Entfernung über REMOVAL-APPROVALS.json ausgesteuert.",
   "frozenRelease": {
-    "version": "3.0.1",
-    "date": "2026-07-25",
-    "gitCommit": "f54bbcc",
-    "slideCount": 63,
+    "version": "3.3.2",
+    "date": "2026-08-11",
+    "gitCommit": "7f608ad",
+    "slideCount": 65,
     "rule": "Bestehende Folien bleiben unverändert. Ergänzungen werden angehängt; Korrekturen erfolgen nur an ausdrücklich genannten Folien."
   },
+  "baselineHistory": [
+    {
+      "version": "3.0.1",
+      "date": "2026-07-25",
+      "gitCommit": "f54bbcc",
+      "slideCount": 63,
+      "role": "Historische Konsolidierungsbasis"
+    },
+    {
+      "version": "3.3.2",
+      "date": "2026-08-11",
+      "gitCommit": "7f608ad",
+      "slideCount": 65,
+      "role": "Aktuelle geprüfte und eingefrorene Workshop-Baseline"
+    }
+  ],
   "contentIds": [
     "opening-outcomes",
     "history-ai",
@@ -72,6 +88,9 @@
     "feature-license-all-slides",
     "feature-handout-profile-license",
     "feature-handout-pdf-export",
-    "feature-generated-handout-pdfs"
+    "feature-generated-handout-pdfs",
+    "feature-single-image-localization",
+    "feature-versioned-runtime-assets",
+    "feature-release-checksum-baseline"
   ]
 }
