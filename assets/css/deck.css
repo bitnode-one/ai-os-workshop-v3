@@ -123,6 +123,9 @@ h3 { margin-bottom: 10px; font-size: clamp(20px,1.7vw,29px); }
 .compare ul { padding-left: 20px; color: var(--muted); line-height: 1.45; }
 
 .illustration { width: 100%; max-height: 470px; object-fit: contain; }
+.harness-graphic-en { display: none; }
+body.lang-en .harness-graphic-de { display: none; }
+body.lang-en .harness-graphic-en { display: block; }
 .architecture { width: 100%; max-height: 61vh; object-fit: contain; filter: drop-shadow(0 14px 26px rgba(18,50,74,.18)); }
 .quote { padding: 24px 28px; border-left: 6px solid var(--gold); border-radius: 0 14px 14px 0; background: var(--gold-soft); font-size: clamp(20px,1.7vw,28px); line-height: 1.38; }
 .code { padding: 22px; border-radius: 14px; background: var(--navy-deep); color: #dff7f3; font: clamp(14px,1.12vw,18px)/1.5 "Cascadia Code", monospace; white-space: pre-wrap; }
