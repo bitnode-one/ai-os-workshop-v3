@@ -2,6 +2,12 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## Repository-Governance · 2026-08-11
+
+- Zentrale `AGENTS.md` mit verbindlicher Baseline, Änderungsregeln, Repository-Struktur, Steuerdateien, Prüfablauf und Definition of Done ergänzt
+- `AGENTS.md` in README und automatischer Governance-Prüfung verankert
+- Präsentation, Handouts, Release-Version, Prüfsummen-Baseline und Tag `v3.3.2` unverändert belassen
+
 ## 3.3.2 · 2026-08-11
 
 ### Sprachumschaltung korrigiert

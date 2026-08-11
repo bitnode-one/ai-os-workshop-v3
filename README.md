@@ -95,6 +95,7 @@ npm run check:notebook
 
 Inhalte dürfen nicht ohne vorherige Genehmigung und dokumentierten Löschantrag entfernt werden.
 Die verbindlichen Learnings für weitere Releases stehen in [`LESSONS-LEARNED.md`](LESSONS-LEARNED.md).
+Zentrale Arbeits- und Schutzregeln für Menschen und KI-Agenten stehen in [`AGENTS.md`](AGENTS.md).
 
 ## Lizenz
 

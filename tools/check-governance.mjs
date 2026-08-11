@@ -2,6 +2,7 @@ import { readFile, stat } from "node:fs/promises";
 
 const root = new URL("../", import.meta.url);
 const requiredFiles = [
+  "AGENTS.md",
   "BACKLOG.md",
   "CHANGELOG.md",
   "RELEASE-CRITERIA.md",
