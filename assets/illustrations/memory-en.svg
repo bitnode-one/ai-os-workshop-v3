@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Memory and RAG as a library">
+  <rect width="960" height="520" rx="40" fill="#fffaf0"/>
+  <path d="M90 420h780M130 110v310M830 110v310" stroke="#16395c" stroke-width="12"/>
+  <g>
+    <rect x="155" y="150" width="75" height="235" rx="8" fill="#7ab8b2"/>
+    <rect x="240" y="205" width="68" height="180" rx="8" fill="#e2ae5f"/>
+    <rect x="318" y="125" width="92" height="260" rx="8" fill="#16395c"/>
+    <rect x="550" y="180" width="75" height="205" rx="8" fill="#e2ae5f"/>
+    <rect x="635" y="135" width="82" height="250" rx="8" fill="#7ab8b2"/>
+    <rect x="727" y="225" width="68" height="160" rx="8" fill="#16395c"/>
+  </g>
+  <circle cx="480" cy="250" r="72" fill="#fff" stroke="#16395c" stroke-width="10"/>
+  <path d="M530 305l68 68" stroke="#16395c" stroke-width="18" stroke-linecap="round"/>
+  <path d="M447 230h66M447 260h48" stroke="#7ab8b2" stroke-width="10" stroke-linecap="round"/>
+  <text x="480" y="477" fill="#16395c" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">FIND, DON'T GUESS</text>
+</svg>
