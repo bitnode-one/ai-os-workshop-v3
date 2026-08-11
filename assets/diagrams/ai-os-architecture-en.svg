@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-label="Clear architecture of a personal AI operating system">
+  <defs>
+    <filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#16395c" flood-opacity=".12"/></filter>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5 0 11z" fill="#7897a3"/></marker>
+    <linearGradient id="core" x1="0" x2="1"><stop stop-color="#dff3f0"/><stop offset="1" stop-color="#fff3cf"/></linearGradient>
+  </defs>
+  <rect width="1200" height="680" rx="38" fill="#fffdf8"/>
+  <text x="62" y="64" fill="#12324a" font-family="Arial, sans-serif" font-size="34" font-weight="800">AI OS</text>
+  <text x="62" y="96" fill="#5d7180" font-family="Arial, sans-serif" font-size="18">An agent harness connects people, knowledge, models and tools.</text>
+
+  <!-- connectors -->
+  <g fill="none" stroke="#7897a3" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M600 182V225"/>
+    <path d="M430 335H350"/>
+    <path d="M770 335H850"/>
+    <path d="M430 408L350 492"/>
+    <path d="M770 408L850 492"/>
+    <path d="M600 445V512"/>
+  </g>
+
+  <!-- user -->
+  <g filter="url(#s)">
+    <rect x="430" y="112" width="340" height="70" rx="22" fill="#fff" stroke="#138a8a" stroke-width="4"/>
+    <text x="600" y="143" text-anchor="middle" fill="#12324a" font-family="Arial, sans-serif" font-size="22" font-weight="800">HUMAN + CHANNELS</text>
+    <text x="600" y="168" text-anchor="middle" fill="#5d7180" font-family="Arial, sans-serif" font-size="16">Chat · Voice · Desktop</text>
+  </g>
+
+  <!-- center -->
+  <g filter="url(#s)">
+    <rect x="430" y="225" width="340" height="220" rx="34" fill="url(#core)" stroke="#138a8a" stroke-width="6"/>
+    <circle cx="600" cy="294" r="42" fill="#fff" stroke="#12324a" stroke-width="5"/>
+    <path d="M575 295l17 17 35-43" fill="none" stroke="#138a8a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="600" y="365" text-anchor="middle" fill="#12324a" font-family="Arial, sans-serif" font-size="31" font-weight="900">AGENT HARNESS</text>
+    <text x="600" y="398" text-anchor="middle" fill="#5d7180" font-family="Arial, sans-serif" font-size="18">plans · connects · controls</text>
+    <rect x="500" y="414" width="200" height="38" rx="19" fill="#12324a"/>
+    <text x="600" y="439" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="700">RULES + LOOPS</text>
+  </g>
+
+  <!-- left and right -->
+  <g filter="url(#s)" font-family="Arial, sans-serif">
+    <rect x="70" y="265" width="280" height="140" rx="25" fill="#eaf6f4" stroke="#7ab8b2" stroke-width="4"/>
+    <text x="102" y="307" fill="#12324a" font-size="25" font-weight="800">CONTEXT</text>
+    <text x="102" y="341" fill="#5d7180" font-size="18">Goal · Rules · Files</text>
+    <text x="102" y="372" fill="#5d7180" font-size="18">What is relevant now</text>
+
+    <rect x="850" y="265" width="280" height="140" rx="25" fill="#fff3cf" stroke="#e2ae5f" stroke-width="4"/>
+    <text x="882" y="307" fill="#12324a" font-size="25" font-weight="800">MODELS</text>
+    <text x="882" y="341" fill="#5d7180" font-size="18">Cloud · Open Source · Local</text>
+    <text x="882" y="372" fill="#5d7180" font-size="18">Reasoning and language</text>
+
+    <rect x="70" y="492" width="280" height="130" rx="25" fill="#eaf6f4" stroke="#7ab8b2" stroke-width="4"/>
+    <text x="102" y="534" fill="#12324a" font-size="25" font-weight="800">KNOWLEDGE</text>
+    <text x="102" y="568" fill="#5d7180" font-size="18">Memory · Second Brain · RAG</text>
+    <text x="102" y="599" fill="#5d7180" font-size="18">Remembering and retrieving</text>
+
+    <rect x="850" y="492" width="280" height="130" rx="25" fill="#eef3df" stroke="#80a45a" stroke-width="4"/>
+    <text x="882" y="534" fill="#12324a" font-size="25" font-weight="800">TOOLS</text>
+    <text x="882" y="568" fill="#5d7180" font-size="18">Tools · Skills · MCP</text>
+    <text x="882" y="599" fill="#5d7180" font-size="18">Calculate, search, edit</text>
+  </g>
+
+  <!-- human gate -->
+  <g filter="url(#s)">
+    <rect x="430" y="512" width="340" height="110" rx="28" fill="#ffe8e2" stroke="#e86a55" stroke-width="4"/>
+    <text x="600" y="554" text-anchor="middle" fill="#12324a" font-family="Arial, sans-serif" font-size="25" font-weight="800">HUMAN APPROVAL</text>
+    <text x="600" y="589" text-anchor="middle" fill="#5d7180" font-family="Arial, sans-serif" font-size="18">review · allow · stop</text>
+  </g>
+</svg>
