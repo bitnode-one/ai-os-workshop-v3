@@ -2,6 +2,22 @@
 
 Alle wesentlichen Inhalts-, Design-, Handout- und Funktionsänderungen werden hier dokumentiert.
 
+## 3.3.2 · 2026-08-11
+
+### Sprachumschaltung korrigiert
+
+- Folien 16, 22, 25, 26, 27, 35 und 37 auf eine robuste Ein-Bild-Umschaltung umgestellt; beim Sprachwechsel wird die Bildquelle ersetzt, statt zwei Grafiken per CSS ein- und auszublenden
+- Englische Grafik für Folie 37 mit `LOCAL` statt `LOKAL` ergänzt
+- Fehlende Übersetzungen auf Folie 39 (`Very good`, `Controllable`) und Folie 41 (`Yes`) ergänzt
+- Automatischen Regressionstest gegen doppelte Sprachgrafiken, fehlende Bildpaare und unmarkierte deutsche Tabellenwerte ergänzt
+- Versionsgebundene CSS-/JavaScript-URLs ergänzt, damit GitHub Pages nach Updates keine veraltete Sprachlogik aus dem Browser-Cache verwendet
+- Betroffene Folien in DE und EN mit lokalem Browser-Rendering geprüft
+
+### Unverändert
+
+- Inhalte und Reihenfolge aller 65 Präsentationsfolien
+- Alle nicht ausdrücklich genannten Folien und Handouts
+
 ## 3.3.1 · 2026-07-27
 
 ### Hermes-Quickstart ergänzt

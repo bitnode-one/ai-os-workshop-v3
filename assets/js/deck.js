@@ -7,6 +7,7 @@ const overview = document.querySelector(".overview");
 const qrDialog = document.querySelector(".qr-dialog");
 const qrCode = document.querySelector(".qr-code");
 const qrUrl = document.querySelector(".qr-url");
+const localizedGraphics = [...document.querySelectorAll("img.localized-graphic")];
 const startedAt = Date.now();
 let current = Math.min(Math.max(Number(location.hash.slice(1)) || 1, 1), slides.length) - 1;
 let language = localStorage.getItem("ai-os-language") || "de";
@@ -40,6 +41,12 @@ function applyLanguage(nextLanguage) {
   document.body.classList.toggle("lang-de", language === "de");
   document.body.classList.toggle("lang-en", language === "en");
   document.documentElement.lang = language;
+  for (const graphic of localizedGraphics) {
+    const source = language === "de" ? graphic.dataset.srcDe : graphic.dataset.srcEn;
+    const alt = language === "de" ? graphic.dataset.altDe : graphic.dataset.altEn;
+    if (graphic.getAttribute("src") !== source) graphic.setAttribute("src", source);
+    graphic.setAttribute("alt", alt);
+  }
   document.querySelector(".language").textContent = language === "de" ? "DE / EN" : "EN / DE";
   localStorage.setItem("ai-os-language", language);
   renderOverview();

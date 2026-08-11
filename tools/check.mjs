@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = fileURLToPath(new URL("../", import.meta.url));
 const indexPath = join(root, "index.html");
 const html = await readFile(indexPath, "utf8");
+const packageMetadata = JSON.parse(await readFile(join(root, "package.json"), "utf8"));
 const slides = [...html.matchAll(/<section class="[^"]*\bslide\b[^"]*"/g)];
 
 if (slides.length < 55 || slides.length > 70) {
@@ -61,7 +62,7 @@ await walk(root);
 const broken = [];
 for (const file of htmlFiles) {
   const source = await readFile(file, "utf8");
-  for (const match of source.matchAll(/(?:src|href)="([^"]+)"/g)) {
+  for (const match of source.matchAll(/(?:src|href|data-src-de|data-src-en)="([^"]+)"/g)) {
     const reference = match[1];
     if (/^(?:https?:|mailto:|#)/.test(reference)) continue;
     const clean = reference.split("#")[0].split("?")[0];
@@ -81,8 +82,36 @@ if (/https?:\/\/[^"')\s]+\.(?:js|css)/i.test(html)) {
 if (!html.includes("assets/vendor/qrcode.js")) throw new Error("Lokale QR-Bibliothek fehlt.");
 if (!html.includes('class="home"')) throw new Error("Home-Button fehlt.");
 if (!html.includes("data-content-id=")) throw new Error("Governance-IDs fehlen.");
+for (const asset of ["assets/css/deck.css", "assets/js/deck.js"]) {
+  if (!html.includes(`${asset}?v=${packageMetadata.version}`)) {
+    throw new Error(`Cache-Buster für ${asset} entspricht nicht Version ${packageMetadata.version}.`);
+  }
+}
+
+if (/class="[^"]*\b(?:harness|skills|architecture|use-case|memory)-graphic-(?:de|en)\b/.test(html)) {
+  throw new Error("Veraltete doppelte Sprachgrafiken gefunden. Pro Folie ist genau ein lokalisiertes Bild erlaubt.");
+}
+const localizedGraphics = [...html.matchAll(/<img\b[^>]*class="[^"]*\blocalized-graphic\b[^"]*"[^>]*>/g)].map((match) => match[0]);
+if (localizedGraphics.length < 7) throw new Error(`Zu wenige robuste Sprachgrafiken: ${localizedGraphics.length}.`);
+for (const graphic of localizedGraphics) {
+  for (const attribute of ["data-src-de", "data-src-en", "data-alt-de", "data-alt-en"]) {
+    if (!graphic.includes(`${attribute}="`)) throw new Error(`Sprachgrafik ohne ${attribute}: ${graphic}`);
+  }
+}
+for (const untranslated of [
+  '<td class="best">Sehr gut</td>',
+  "<td>Sehr gut</td>",
+  '<td class="best">Kontrollierbar</td>',
+  "<td>Kontrollierbar</td>",
+  "<td>Ja</td>"
+]) {
+  if (html.includes(untranslated)) throw new Error(`Nicht umschaltbarer deutscher Text gefunden: ${untranslated}`);
+}
 
 const deckScript = await readFile(join(root, "assets/js/deck.js"), "utf8");
+if (!deckScript.includes('querySelectorAll("img.localized-graphic")') || !deckScript.includes("graphic.dataset.srcEn")) {
+  throw new Error("Robuste Ein-Bild-Sprachumschaltung fehlt.");
+}
 if (!deckScript.includes('className = "slide-license"') || !deckScript.includes("creativecommons.org/licenses/by-sa/4.0/")) {
   throw new Error("Klickbarer CC-BY-SA-Hinweis auf allen Folien fehlt.");
 }

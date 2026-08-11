@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="AI OS / KI-OS Workshop v3 – KI-Agenten für den Alltag">
   <title>AI OS Workshop v3</title>
-  <link rel="stylesheet" href="assets/css/deck.css">
+  <link rel="stylesheet" href="assets/css/deck.css?v=3.3.2">
 </head>
 <body class="lang-de">
 <main class="deck" aria-live="polite">
@@ -130,7 +130,7 @@
 
   <section class="slide split" data-content-id="use-case-selection" data-title-de="Gute Agentenaufgaben" data-title-en="Good agent tasks" data-section-de="Vom Chat zum Handeln" data-section-en="From chat to action">
     <div><p class="kicker"><span class="lang de">Faustregel</span><span class="lang en">Rule of thumb</span></p><h2><span class="lang de">Wiederholbar + prüfbar + mehrere Schritte</span><span class="lang en">Repeatable + verifiable + multi-step</span></h2><div class="checklist"><div><span class="lang de">Es gibt ein klares Ergebnisformat.</span><span class="lang en">There is a clear output format.</span></div><div><span class="lang de">Zwischenschritte können kontrolliert werden.</span><span class="lang en">Intermediate steps can be reviewed.</span></div><div><span class="lang de">Fehler sind reversibel oder benötigen Freigabe.</span><span class="lang en">Errors are reversible or require approval.</span></div></div></div>
-    <img class="illustration use-case-graphic use-case-graphic-de" src="assets/illustrations/context-desk.svg" alt="Ziel, Zeit und Material als Arbeitstisch"><img class="illustration use-case-graphic use-case-graphic-en" src="assets/illustrations/context-desk-en.svg" alt="Goal, time and material as a workbench">
+    <img class="illustration localized-graphic" src="assets/illustrations/context-desk.svg" data-src-de="assets/illustrations/context-desk.svg" data-src-en="assets/illustrations/context-desk-en.svg" data-alt-de="Ziel, Zeit und Material als Arbeitstisch" data-alt-en="Goal, time and material as a workbench" alt="Ziel, Zeit und Material als Arbeitstisch">
   </section>
 
   <section class="slide stack" data-content-id="foundation-loops-autonomy" data-title-de="Autonomie braucht Leitplanken" data-title-en="Autonomy needs guardrails" data-section-de="Vom Chat zum Handeln" data-section-en="From chat to action">
@@ -171,7 +171,7 @@
   </section>
 
   <section class="slide split reverse" data-content-id="foundation-context" data-title-de="Tokens und Kontext" data-title-en="Tokens and context" data-section-de="Grundlagen" data-section-en="Foundations">
-    <img class="illustration" src="assets/illustrations/context-desk.svg" alt="">
+    <img class="illustration localized-graphic" src="assets/illustrations/context-desk.svg" data-src-de="assets/illustrations/context-desk.svg" data-src-en="assets/illustrations/context-desk-en.svg" data-alt-de="Kontext als Arbeitstisch mit Ziel, Zeit und Material" data-alt-en="Context as a workbench with goal, time and material" alt="Kontext als Arbeitstisch mit Ziel, Zeit und Material">
     <div><p class="kicker">Context</p><h2><span class="lang de">Der Arbeitstisch des Modells</span><span class="lang en">The model’s workbench</span></h2><p class="lead"><span class="lang de">Prompt, Regeln, Gespräch, Dateien und Tool-Ergebnisse teilen sich ein begrenztes Kontextfenster.</span><span class="lang en">Prompt, rules, conversation, files and tool results share a limited context window.</span></p><p class="quote"><span class="lang de">Mehr Kontext ist nicht automatisch besser. Relevanter Kontext ist besser.</span><span class="lang en">More context is not automatically better. Relevant context is better.</span></p></div>
   </section>
 
@@ -198,17 +198,17 @@
   </section>
 
   <section class="slide split reverse" data-content-id="foundation-harness" data-title-de="Agent und Harness" data-title-en="Agent and harness" data-section-de="Grundlagen" data-section-en="Foundations">
-    <img class="illustration harness-graphic harness-graphic-de" src="assets/illustrations/harness.svg" alt="Harness verbindet Kontext, Werkzeuge, Regeln und Memory"><img class="illustration harness-graphic harness-graphic-en" src="assets/illustrations/harness-en.svg" alt="Harness connects context, tools, rules and memory">
+    <img class="illustration localized-graphic" src="assets/illustrations/harness.svg" data-src-de="assets/illustrations/harness.svg" data-src-en="assets/illustrations/harness-en.svg" data-alt-de="Harness verbindet Kontext, Werkzeuge, Regeln und Memory" data-alt-en="Harness connects context, tools, rules and memory" alt="Harness verbindet Kontext, Werkzeuge, Regeln und Memory">
     <div><p class="kicker">Harness</p><h2><span class="lang de">Der Rahmen, der alles zusammenhält</span><span class="lang en">The framework that holds everything together</span></h2><p class="lead"><span class="lang de"><b>Harness</b> bedeutet wörtlich „Geschirr“ oder „Haltevorrichtung“. In einem KI-System ist es die Software-Hülle, die Modell, Kontext, Werkzeuge, Speicher, Regeln und Freigaben kontrolliert verbindet.</span><span class="lang en"><b>Harness</b> literally means a supporting or controlling framework. In an AI system it is the software shell that connects and controls the model, context, tools, memory, rules and approvals.</span></p><p class="quote"><span class="lang de">Modell = Motor. Harness = Fahrzeug mit Lenkrad, Bremsen und Armaturen.</span><span class="lang en">Model = engine. Harness = vehicle with steering, brakes and dashboard.</span></p></div>
   </section>
 
   <section class="slide split" data-content-id="foundation-memory-rag" data-title-de="Memory und RAG" data-title-en="Memory and RAG" data-section-de="Grundlagen" data-section-en="Foundations">
     <div><p class="kicker">Memory + RAG</p><h2><span class="lang de">Erinnern ist nicht dasselbe wie Nachschlagen</span><span class="lang en">Remembering is not the same as retrieving</span></h2><p class="lead"><span class="lang de"><b>RAG = Retrieval-Augmented Generation</b>, deutsch etwa „abrufgestützte Generierung“: Das System sucht zuerst passende Textstellen und gibt sie dem Modell als Quelle für die Antwort.</span><span class="lang en"><b>RAG = Retrieval-Augmented Generation:</b> the system first retrieves relevant passages and gives them to the model as sources for its answer.</span></p><div class="card teal"><strong><span class="lang de">Beispiel</span><span class="lang en">Example</span></strong><p><span class="lang de">Frage: „Welche Kündigungsfrist steht in unserem Vertrag?“ RAG findet den passenden Absatz; das Modell formuliert daraus die Antwort mit Quellenangabe.</span><span class="lang en">Question: “What notice period is in our contract?” RAG finds the relevant clause; the model answers from that source.</span></p></div><p class="small"><span class="lang de"><b>Second Brain:</b> Ihre organisierte Wissenssammlung. <b>RAG:</b> die Such- und Zuführtechnik, die daraus relevante Stellen holt.</span><span class="lang en"><b>Second brain:</b> your organized knowledge collection. <b>RAG:</b> the retrieval technique that brings relevant parts into context.</span></p></div>
-    <img class="illustration memory-graphic memory-graphic-de" src="assets/illustrations/memory.svg" alt="Gedächtnis und RAG als Bibliothek"><img class="illustration memory-graphic memory-graphic-en" src="assets/illustrations/memory-en.svg" alt="Memory and RAG as a library">
+    <img class="illustration localized-graphic" src="assets/illustrations/memory.svg" data-src-de="assets/illustrations/memory.svg" data-src-en="assets/illustrations/memory-en.svg" data-alt-de="Gedächtnis und RAG als Bibliothek" data-alt-en="Memory and RAG as a library" alt="Gedächtnis und RAG als Bibliothek">
   </section>
 
   <section class="slide split reverse" data-content-id="foundation-skills-mcp" data-title-de="Skills, Commands und MCP" data-title-en="Skills, commands and MCP" data-section-de="Grundlagen" data-section-en="Foundations">
-    <img class="illustration skills-graphic skills-graphic-de" src="assets/illustrations/skills.svg" alt="Skills verbinden Recherche, Dateien, Kalender und Daten"><img class="illustration skills-graphic skills-graphic-en" src="assets/illustrations/skills-en.svg" alt="Skills connect research, files, calendar and data">
+    <img class="illustration localized-graphic" src="assets/illustrations/skills.svg" data-src-de="assets/illustrations/skills.svg" data-src-en="assets/illustrations/skills-en.svg" data-alt-de="Skills verbinden Recherche, Dateien, Kalender und Daten" data-alt-en="Skills connect research, files, calendar and data" alt="Skills verbinden Recherche, Dateien, Kalender und Daten">
     <div><p class="kicker">Capabilities / <span class="lang de">Fähigkeiten</span><span class="lang en">Capabilities</span></p><h2><span class="lang de">Anleitung, Abkürzung und Anschluss</span><span class="lang en">Instructions, shortcut and connection</span></h2><div class="checklist"><div><span class="lang de"><b>Skill:</b> eine wiederverwendbare Arbeitsanleitung, z. B. „News mit Quellen prüfen“.</span><span class="lang en"><b>Skill:</b> a reusable procedure, e.g. “verify news with sources.”</span></div><div><span class="lang de"><b>Command / Befehl:</b> ein kurzer gespeicherter Starter wie <code>/news-radar</code>, der einen Skill mit Vorgaben aufruft.</span><span class="lang en"><b>Command:</b> a short saved starter such as <code>/news-radar</code> that invokes a skill with defaults.</span></div><div><span class="lang de"><b>MCP = Model Context Protocol:</b> ein offener Verbindungsstandard – wie USB-C für KI-Werkzeuge und Datenquellen.</span><span class="lang en"><b>MCP = Model Context Protocol:</b> an open connection standard—like USB-C for AI tools and data sources.</span></div></div></div>
   </section>
 
@@ -256,7 +256,7 @@ No sign-ins, purchases or messages without my approval.</span></div></div>
   </section>
 
   <section class="slide center" data-content-id="ai-os-architecture" data-title-de="Architektur eines KI-OS" data-title-en="AI OS architecture" data-section-de="KI-Betriebssystem" data-section-en="AI operating system">
-    <img class="architecture architecture-graphic architecture-graphic-de" src="assets/diagrams/ai-os-architecture.svg" alt="Architektur eines KI-Betriebssystems"><img class="architecture architecture-graphic architecture-graphic-en" src="assets/diagrams/ai-os-architecture-en.svg" alt="Architecture of an AI operating system">
+    <img class="architecture localized-graphic" src="assets/diagrams/ai-os-architecture.svg" data-src-de="assets/diagrams/ai-os-architecture.svg" data-src-en="assets/diagrams/ai-os-architecture-en.svg" data-alt-de="Architektur eines KI-Betriebssystems" data-alt-en="Architecture of an AI operating system" alt="Architektur eines KI-Betriebssystems">
     <p class="source"><span class="lang de">Editierbare Quelle: assets/diagrams/ai-os-architecture.excalidraw</span><span class="lang en">Editable source: assets/diagrams/ai-os-architecture.excalidraw</span></p>
   </section>
 
@@ -267,7 +267,7 @@ No sign-ins, purchases or messages without my approval.</span></div></div>
 
   <section class="slide split" data-content-id="sovereign-hybrid" data-title-de="Souverän heißt hybrid" data-title-en="Sovereign means hybrid" data-section-de="KI-Betriebssystem" data-section-en="AI operating system">
     <div><p class="kicker"><span class="lang de">Kein Dogma</span><span class="lang en">No dogma</span></p><h2><span class="lang de">Lokal, wenn Kontrolle zählt. Cloud, wenn Spitzenleistung zählt.</span><span class="lang en">Local when control matters. Cloud when frontier capability matters.</span></h2><p class="lead"><span class="lang de">Das KI-OS hält die Wahl beim Nutzer – pro Aufgabe und Datenklasse.</span><span class="lang en">The AI OS keeps the choice with the user—for each task and data class.</span></p></div>
-    <img class="illustration" src="assets/illustrations/hybrid.svg" alt="">
+    <img class="illustration localized-graphic" src="assets/illustrations/hybrid.svg" data-src-de="assets/illustrations/hybrid.svg" data-src-en="assets/illustrations/hybrid-en.svg" data-alt-de="Hybride KI mit lokaler und Cloud-Ausführung" data-alt-en="Hybrid AI with local and cloud execution" alt="Hybride KI mit lokaler und Cloud-Ausführung">
   </section>
 
   <section class="slide stack" data-title-de="Warum lokale KI?" data-title-en="Why local AI?" data-section-de="KI-Betriebssystem" data-section-en="AI operating system">
@@ -278,8 +278,8 @@ No sign-ins, purchases or messages without my approval.</span></div></div>
   <section class="slide stack" data-title-de="Lokale Modelle realistisch sehen" data-title-en="A realistic view of local models" data-section-de="KI-Betriebssystem" data-section-en="AI operating system">
     <p class="kicker"><span class="lang de">Erwartungsmanagement</span><span class="lang en">Expectations</span></p><h2><span class="lang de">Kleiner, privater, günstiger – aber nicht immer stärker</span><span class="lang en">Smaller, private, cheaper—but not always stronger</span></h2>
     <table class="table"><thead><tr><th><span class="lang de">Aufgabe</span><span class="lang en">Task</span></th><th><span class="lang de">Lokal</span><span class="lang en">Local</span></th><th>Frontier Cloud</th></tr></thead><tbody>
-      <tr><td><span class="lang de">Klassifizieren, extrahieren</span><span class="lang en">Classify, extract</span></td><td class="best">Sehr gut</td><td>Sehr gut</td></tr>
-      <tr><td><span class="lang de">Private Dokumente</span><span class="lang en">Private documents</span></td><td class="best">Kontrollierbar</td><td><span class="lang de">Vertrag prüfen</span><span class="lang en">Check terms</span></td></tr>
+      <tr><td><span class="lang de">Klassifizieren, extrahieren</span><span class="lang en">Classify, extract</span></td><td class="best"><span class="lang de">Sehr gut</span><span class="lang en">Very good</span></td><td><span class="lang de">Sehr gut</span><span class="lang en">Very good</span></td></tr>
+      <tr><td><span class="lang de">Private Dokumente</span><span class="lang en">Private documents</span></td><td class="best"><span class="lang de">Kontrollierbar</span><span class="lang en">Controllable</span></td><td><span class="lang de">Vertrag prüfen</span><span class="lang en">Check terms</span></td></tr>
       <tr><td><span class="lang de">Komplexe Recherche</span><span class="lang en">Complex research</span></td><td><span class="lang de">begrenzt</span><span class="lang en">limited</span></td><td class="best"><span class="lang de">meist stärker</span><span class="lang en">usually stronger</span></td></tr>
       <tr><td><span class="lang de">Große Agentenläufe</span><span class="lang en">Large agent runs</span></td><td><span class="lang de">Hardwarelimit</span><span class="lang en">hardware-limited</span></td><td class="best"><span class="lang de">schneller</span><span class="lang en">faster</span></td></tr>
     </tbody></table>
@@ -292,8 +292,8 @@ No sign-ins, purchases or messages without my approval.</span></div></div>
   <section class="slide stack" data-content-id="systems-comparison" data-title-de="Vier Systemtypen" data-title-en="Four system types" data-section-de="Systemwahl" data-section-en="System choice">
     <p class="kicker"><span class="lang de">Vereinfachter Vergleich</span><span class="lang en">Simplified comparison</span></p><h2><span class="lang de">Hermes, OpenClaw, Claude Code und Codex</span><span class="lang en">Hermes, OpenClaw, Claude Code and Codex</span></h2>
     <table class="table"><thead><tr><th>System</th><th><span class="lang de">Stärke</span><span class="lang en">Strength</span></th><th><span class="lang de">Modellwahl</span><span class="lang en">Model choice</span></th><th><span class="lang de">Lokal</span><span class="lang en">Local</span></th><th><span class="lang de">Typische Zielgruppe</span><span class="lang en">Typical audience</span></th></tr></thead><tbody>
-      <tr><td class="best">Hermes Agent</td><td><span class="lang de">persönliches, offenes KI-OS</span><span class="lang en">personal, open AI OS</span></td><td><span class="lang de">breit / agnostisch</span><span class="lang en">broad / agnostic</span></td><td>Ja</td><td><span class="lang de">Alltag + Technik</span><span class="lang en">everyday + technical</span></td></tr>
-      <tr><td>OpenClaw</td><td><span class="lang de">offene Agenten-Experimente</span><span class="lang en">open agent experiments</span></td><td><span class="lang de">variabel</span><span class="lang en">variable</span></td><td>Ja</td><td><span class="lang de">Tüftler</span><span class="lang en">tinkerers</span></td></tr>
+      <tr><td class="best">Hermes Agent</td><td><span class="lang de">persönliches, offenes KI-OS</span><span class="lang en">personal, open AI OS</span></td><td><span class="lang de">breit / agnostisch</span><span class="lang en">broad / agnostic</span></td><td><span class="lang de">Ja</span><span class="lang en">Yes</span></td><td><span class="lang de">Alltag + Technik</span><span class="lang en">everyday + technical</span></td></tr>
+      <tr><td>OpenClaw</td><td><span class="lang de">offene Agenten-Experimente</span><span class="lang en">open agent experiments</span></td><td><span class="lang de">variabel</span><span class="lang en">variable</span></td><td><span class="lang de">Ja</span><span class="lang en">Yes</span></td><td><span class="lang de">Tüftler</span><span class="lang en">tinkerers</span></td></tr>
       <tr><td>Claude Code</td><td><span class="lang de">starkes Coding-Erlebnis</span><span class="lang en">strong coding experience</span></td><td>Anthropic</td><td><span class="lang de">Client lokal</span><span class="lang en">local client</span></td><td>Developers</td></tr>
       <tr><td>Codex</td><td><span class="lang de">Coding, lokale und Cloud-Aufgaben</span><span class="lang en">coding, local and cloud tasks</span></td><td>OpenAI</td><td><span class="lang de">Client lokal</span><span class="lang en">local client</span></td><td>Developers</td></tr>
     </tbody></table>
@@ -529,6 +529,6 @@ Invent nothing; flag missing owners.</span></div></article><article class="card 
   <div class="qr-card"><button class="qr-close" aria-label="Close">×</button><div class="qr-code"></div><p class="qr-url"></p><button class="qr-copy"><span class="lang de">Adresse kopieren</span><span class="lang en">Copy address</span></button></div>
 </div>
 <script src="assets/vendor/qrcode.js"></script>
-<script type="module" src="assets/js/deck.js"></script>
+<script type="module" src="assets/js/deck.js?v=3.3.2"></script>
 </body>
 </html>
